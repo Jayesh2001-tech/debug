@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class CollectionExample {
+
+    public static void main(String[] args) {
+        // Create a list and add elements
+        List<String> list = new ArrayList<>();
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Orange");
+
+        // Create a set and add elements
+        Set<String> set = new HashSet<>();
+        set.add("Red");
+        set.add("Green");
+        set.add("Blue");
+
+        // Call function to demonstrate ArrayList
+        displayListElements(list);
+
+        // Call function to demonstrate HashSet
+        displaySetElements(set);
+    }
+
+    // Function to display elements of an ArrayList
+    private static void displayListElements(List<String> list) {
+        System.out.println("List Elements:");
+        for (String element : list) {
+            System.out.println(element);
+        }
+    }
+
+    // Function to display elements of a HashSet
+    private static void displaySetElements(Set<String> set) {
+        System.out.println("Set Elements:");
+        for (String element : set) {
+            System.out.println(element);
+        }
+    }
+}
